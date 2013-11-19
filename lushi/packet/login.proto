@@ -1,0 +1,39 @@
+package login;
+
+message Request {
+	required string account = 1;
+	required string passwd = 2;
+}
+
+message Response {
+	enum Error {
+		SUCCESS = 0;
+		ACCOUNT_NOT_EXIST = 1;
+		WRONG_PASSWD = 2;
+		UNKOWN = 3;
+	}
+	required Error err = 1;
+	required string token = 2;
+}
+
+message Empty {
+	optional int32 id = 1;
+}
+
+message Server {
+	required string name = 1;
+	required string address = 2;
+	required int32 port =3;
+	enum ServerLoad {
+		LOW = 0;
+		NORMAL = 1;
+		HIGH = 2;
+		FULL = 3;
+		OFFLINE = 4;
+	}
+	required ServerLoad load = 4 [default=LOW];
+}
+
+message ServerList {
+	repeated Server servers = 1;
+}

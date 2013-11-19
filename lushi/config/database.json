@@ -1,0 +1,8 @@
+{
+	"users": {
+		"address": "localhost",
+		"port": 27017,
+		"database": "card",
+		"collection": "users"
+	}
+}

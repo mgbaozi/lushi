@@ -38,3 +38,6 @@ nosetests.xml
 # others
 *.o
 *.swp
+
+# protobuf file
+*_pb2.py

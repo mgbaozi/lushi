@@ -2,12 +2,12 @@
 	"servers": [
 		{
 			"name": "TestServer1",
-			"address": "iqworry.me",
+			"address": "card.iqworry.me",
 			"port": 23335
 		},
 		{
 			"name": "TestServer2",
-			"address": "iqworry.me",
+			"address": "card.iqworry.me",
 			"port": 23337
 		}
 	]

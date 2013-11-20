@@ -1,2 +1,2 @@
-if __name__ == '__main__':
-	print 'running'
+import login_server
+login_server.app.run([23333,23334])

@@ -49,4 +49,5 @@ def on_empty(conn, message):
 	response = app.make_packet(server_list_rep)
 	conn.send(response)
 
-app.run([23333, 23334])
+if __name__ == "__main__":
+	app.run([23333, 23334])

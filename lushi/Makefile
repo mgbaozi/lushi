@@ -7,7 +7,7 @@ packet:
 
 .PHONY: run
 run: all
-	python application.py
+	python application.py &
 
 .PHONY: clean
 clean:

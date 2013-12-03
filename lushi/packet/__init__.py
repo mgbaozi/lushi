@@ -3,7 +3,7 @@ import login_pb2 as login
 
 from proto_global import global_pool
 
-from message import get_message, get_name, register, get_function
+from message import get_message, get_name
 
 _modules = [login]
 

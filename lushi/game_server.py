@@ -8,7 +8,7 @@ db = DataBase()
 import memcache
 cache = memcache.Client(['127.0.0.1:11211'])
 
-@app.route(communicate.connect)
+@app.route(connection.Connect)
 def on_connect(conn, message):
 	token = messae.token
 	account = cache.get(token)

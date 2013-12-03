@@ -10,9 +10,3 @@ def get_message(type_name):
 def get_name(message):
 	return message.DESCRIPTOR.full_name
 
-_functions = {}
-def register(msg_type, function):
-	_functions[msg_type.DESCRIPTOR.full_name] = function
-
-def get_function(message):
-	return _functions.get(message.DESCRIPTOR.full_name)

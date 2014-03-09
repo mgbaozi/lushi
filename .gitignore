@@ -41,3 +41,5 @@ nosetests.xml
 
 # protobuf file
 *_pb2.py
+
+.DS_Store
